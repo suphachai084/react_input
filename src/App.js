@@ -7,11 +7,8 @@ import {queryString} from 'query-string';
 
 class App extends Component {
   constructor(){ super();
-
-    
   }
   render() {
-
     return (
       <BrowserRouter>
       <div className="App">
@@ -19,9 +16,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <img src={logo} className="App-logo" alt="logo" />
         
-          <ul>
-            <NavLink to="/" activeClassName="active">PageInput</NavLink>
-          </ul>
+          <ul><NavLink to="/" activeClassName="active">PageInput</NavLink></ul>
         </div>
 
         <div className="App-intro">
@@ -29,8 +24,7 @@ class App extends Component {
               <Route path="/" component={input} exact={true} />
               <Route path="/Page2/:value" component={output} exact={true} />
           </Switch>
-        </div>
-        
+        </div>  
       </div>
       </BrowserRouter>
     );
