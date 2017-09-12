@@ -1,7 +1,6 @@
 import React from 'react';
 
 class output extends React.Component {
-	
 	constructor(){
     super();
   	}
